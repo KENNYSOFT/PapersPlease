@@ -6,20 +6,18 @@
 //  Copyright (c) 2014년 KENNYSOFT. All rights reserved.
 //
 
-#import "KennyViewController.h"
+#import "KennyMainmenuViewController.h"
 
-@interface KennyViewController ()
+@interface KennyMainmenuViewController ()
 
 @end
 
-@implementation KennyViewController
+@implementation KennyMainmenuViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    [endless setHidden:YES];
     
     if(audioPlayer==nil)
     {
@@ -34,23 +32,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
--(IBAction)mainmenuEndlessButtonClicked:(id)sender
-{
-    [mainmenu setHidden:YES];
-    [endless setHidden:NO];
-}
-
--(IBAction)endlessBackButtonClicked:(id)sender
-{
-    [endless setHidden:YES];
-    [mainmenu setHidden:NO];
-}
-
--(IBAction)endlessStartButtonClicked:(id)sender
-{
-    //
 }
 
 @end

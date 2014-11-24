@@ -9,20 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface KennyViewController : UIViewController
+@interface KennyMainmenuViewController : UIViewController
 {
     IBOutlet UIView *mainmenu;
     IBOutlet UIImageView *mainmenu_bg;
     IBOutlet UIButton *mainmenu_btn_endless;
-    IBOutlet UIView *endless;
-    IBOutlet UIImageView *endless_bg;
-    IBOutlet UIButton *endless_btn_back;
-    IBOutlet UIButton *endless_btn_start;
     AVAudioPlayer *audioPlayer;
 }
-
--(IBAction)mainmenuEndlessButtonClicked:(id)sender;
--(IBAction)endlessBackButtonClicked:(id)sender;
--(IBAction)endlessStartButtonClicked:(id)sender;
 
 @end
