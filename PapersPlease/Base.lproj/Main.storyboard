@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--Kenny View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="KennyViewController" sceneMemberID="viewController">
@@ -13,15 +13,88 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mno-jz-ECo">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="93u-KO-0hX">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mainmenu_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="KiI-3X-T3W">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Px-EE-Mzo">
+                                        <rect key="frame" x="395" y="564" width="232" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="highlighted" backgroundImage="mainmenu_btn_endless.png"/>
+                                        <connections>
+                                            <action selector="mainmenuEndlessButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pfy-Oh-Sck"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bFL-cw-T5l">
+                                <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="endless_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="n55-x0-7HH">
+                                        <rect key="frame" x="0.0" y="0.0" width="1024" height="748"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bC-JW-fyW">
+                                        <rect key="frame" x="36" y="591" width="232" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="highlighted" backgroundImage="endless_btn_back.png"/>
+                                        <connections>
+                                            <action selector="endlessBackButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f2I-Y0-4pl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHY-84-cBZ">
+                                        <rect key="frame" x="395" y="591" width="232" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="endless_btn_start.png"/>
+                                        <connections>
+                                            <action selector="endlessStartButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Xk-FD-YLX"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="endless" destination="bFL-cw-T5l" id="mrY-9Q-ihz"/>
+                        <outlet property="endless_bg" destination="n55-x0-7HH" id="cfa-t4-CMk"/>
+                        <outlet property="endless_btn_back" destination="9bC-JW-fyW" id="a8L-hi-8jj"/>
+                        <outlet property="endless_btn_start" destination="cHY-84-cBZ" id="OI6-pW-w7p"/>
+                        <outlet property="mainmenu" destination="93u-KO-0hX" id="x6Z-nz-Ykr"/>
+                        <outlet property="mainmenu_bg" destination="KiI-3X-T3W" id="e2a-fJ-IQr"/>
+                        <outlet property="mainmenu_btn_endless" destination="4Px-EE-Mzo" id="JNu-Hb-auX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-284" y="-252"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="endless_bg.png" width="1140" height="640"/>
+        <image name="endless_btn_back.png" width="258" height="30"/>
+        <image name="endless_btn_start.png" width="258" height="30"/>
+        <image name="mainmenu_bg.png" width="1140" height="640"/>
+        <image name="mainmenu_btn_endless.png" width="258" height="30"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
