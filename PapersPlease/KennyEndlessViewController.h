@@ -14,8 +14,18 @@
     IBOutlet UIImageView *endless_bg;
     IBOutlet UIButton *endless_btn_back;
     IBOutlet UIButton *endless_btn_start;
+    IBOutlet UIButton *endless_btn_mode_1;
+    IBOutlet UIButton *endless_btn_mode_2;
+    IBOutlet UIButton *endless_btn_mode_3;
+    IBOutlet UIButton *endless_btn_type_1;
+    IBOutlet UIButton *endless_btn_type_2;
+    IBOutlet UIButton *endless_btn_type_3;
+    IBOutlet UIButton *endless_btn_type_4;
+    IBOutlet UIImageView *endless_img_line;
+    int mode,type;
 }
 
 -(IBAction)goBack:(id)sender;
+-(void)setLine;
 
 @end

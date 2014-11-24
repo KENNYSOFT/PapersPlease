@@ -99,6 +99,87 @@
                                     <segue destination="QqU-gK-C1t" kind="push" id="VrC-dC-vHh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hb-Bp-3my">
+                                <rect key="frame" x="126" y="204" width="234" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="endless_btn_mode_1.png"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="NlJ-FJ-dhW" eventType="touchUpInside" id="DyM-Dc-6xY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wr6-NG-kQm">
+                                <rect key="frame" x="395" y="204" width="234" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="endless_btn_mode_2.png"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="NlJ-FJ-dhW" eventType="touchUpInside" id="JFh-OT-d7e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTJ-y0-GKe">
+                                <rect key="frame" x="665" y="204" width="234" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="endless_btn_mode_3.png"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="NlJ-FJ-dhW" eventType="touchUpInside" id="67y-YN-9fk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j8j-l8-M3G">
+                                <rect key="frame" x="171" y="402" width="144" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="endless_btn_type_1.png"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="NlJ-FJ-dhW" eventType="touchUpInside" id="iiV-Bs-aU1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih5-Us-4sQ">
+                                <rect key="frame" x="351" y="402" width="144" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="endless_btn_type_2.png"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="NlJ-FJ-dhW" eventType="touchUpInside" id="Eld-yr-8AY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxU-M7-p1F">
+                                <rect key="frame" x="530" y="402" width="144" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="endless_btn_type_3.png"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="NlJ-FJ-dhW" eventType="touchUpInside" id="9Vy-Km-RnK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnh-Xx-487">
+                                <rect key="frame" x="710" y="402" width="144" height="108"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="endless_btn_type_4.png"/>
+                                <connections>
+                                    <action selector="buttonClicked:" destination="NlJ-FJ-dhW" eventType="touchUpInside" id="Hee-Kn-xmI"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="09r-PN-Hma">
+                                <rect key="frame" x="243" y="350" width="540" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -109,7 +190,15 @@
                         <outlet property="endless" destination="o0A-Ng-42B" id="iVL-Bn-VS3"/>
                         <outlet property="endless_bg" destination="MTe-9C-KtQ" id="vPe-6a-ZlB"/>
                         <outlet property="endless_btn_back" destination="w8N-hK-Lx9" id="RJc-uf-QAY"/>
+                        <outlet property="endless_btn_mode_1" destination="4hb-Bp-3my" id="dYD-1k-wGF"/>
+                        <outlet property="endless_btn_mode_2" destination="Wr6-NG-kQm" id="o5P-9P-Xv2"/>
+                        <outlet property="endless_btn_mode_3" destination="aTJ-y0-GKe" id="gNy-k0-fFY"/>
                         <outlet property="endless_btn_start" destination="JxU-zz-lMo" id="w4C-mh-GJZ"/>
+                        <outlet property="endless_btn_type_1" destination="j8j-l8-M3G" id="sL2-GA-DQi"/>
+                        <outlet property="endless_btn_type_2" destination="Ih5-Us-4sQ" id="sUP-hL-WUa"/>
+                        <outlet property="endless_btn_type_3" destination="AxU-M7-p1F" id="eid-qt-kt9"/>
+                        <outlet property="endless_btn_type_4" destination="Rnh-Xx-487" id="v3M-gM-73A"/>
+                        <outlet property="endless_img_line" destination="09r-PN-Hma" id="UN0-Oo-hzS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xpz-0a-yo8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -141,7 +230,14 @@
     <resources>
         <image name="endless_bg.png" width="1140" height="640"/>
         <image name="endless_btn_back.png" width="258" height="30"/>
+        <image name="endless_btn_mode_1.png" width="260" height="160"/>
+        <image name="endless_btn_mode_2.png" width="260" height="160"/>
+        <image name="endless_btn_mode_3.png" width="260" height="160"/>
         <image name="endless_btn_start.png" width="258" height="30"/>
+        <image name="endless_btn_type_1.png" width="160" height="120"/>
+        <image name="endless_btn_type_2.png" width="160" height="120"/>
+        <image name="endless_btn_type_3.png" width="160" height="120"/>
+        <image name="endless_btn_type_4.png" width="160" height="120"/>
         <image name="mainmenu_bg.png" width="1140" height="640"/>
         <image name="mainmenu_btn_endless.png" width="258" height="30"/>
     </resources>
