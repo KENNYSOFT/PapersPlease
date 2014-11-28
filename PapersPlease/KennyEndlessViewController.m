@@ -25,11 +25,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(IBAction)goBack:(id)sender
-{
-    [self.navigationController popViewControllerAnimated:YES];
-}
-
 -(IBAction)buttonClicked:(id)sender
 {
     if(sender==endless_btn_mode_1)mode=1;

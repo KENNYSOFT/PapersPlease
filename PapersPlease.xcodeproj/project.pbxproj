@@ -114,6 +114,16 @@
 		B20AA1891A22BF0E006FF653 /* endless_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B20AA1881A22BF0E006FF653 /* endless_bg.png */; };
 		B20AA18C1A22C056006FF653 /* endless_btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = B20AA18A1A22C056006FF653 /* endless_btn_back.png */; };
 		B20AA18D1A22C056006FF653 /* endless_btn_start.png in Resources */ = {isa = PBXBuildFile; fileRef = B20AA18B1A22C056006FF653 /* endless_btn_start.png */; };
+		B252F0401A27F5F900B1DBA1 /* KennyFadeSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B252F03F1A27F5F900B1DBA1 /* KennyFadeSegue.m */; };
+		B252F0431A27F7E500B1DBA1 /* KennyMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B252F0421A27F7E500B1DBA1 /* KennyMusicPlayer.m */; };
+		B252F0451A27FCCE00B1DBA1 /* pause_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B252F0441A27FCCE00B1DBA1 /* pause_bg.png */; };
+		B252F0471A27FCDB00B1DBA1 /* pause_btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = B252F0461A27FCDB00B1DBA1 /* pause_btn_back.png */; };
+		B252F0491A27FCE000B1DBA1 /* pause_btn_mainmenu.png in Resources */ = {isa = PBXBuildFile; fileRef = B252F0481A27FCE000B1DBA1 /* pause_btn_mainmenu.png */; };
+		B252F04B1A27FCE600B1DBA1 /* pause_btn_exit.png in Resources */ = {isa = PBXBuildFile; fileRef = B252F04A1A27FCE600B1DBA1 /* pause_btn_exit.png */; };
+		B252F04E1A27FCF300B1DBA1 /* pause_btn_minus.png in Resources */ = {isa = PBXBuildFile; fileRef = B252F04C1A27FCF300B1DBA1 /* pause_btn_minus.png */; };
+		B252F04F1A27FCF300B1DBA1 /* pause_btn_plus.png in Resources */ = {isa = PBXBuildFile; fileRef = B252F04D1A27FCF300B1DBA1 /* pause_btn_plus.png */; };
+		B2C98A6B1A27F24B004899CB /* play_btn_pause.png in Resources */ = {isa = PBXBuildFile; fileRef = B2C98A6A1A27F24B004899CB /* play_btn_pause.png */; };
+		B2C98A6E1A27F29B004899CB /* KennyPauseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2C98A6D1A27F29B004899CB /* KennyPauseViewController.m */; };
 		B2F546E21A231E0900764CA0 /* KennyEndlessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F546E11A231E0900764CA0 /* KennyEndlessViewController.m */; };
 		B2F546E51A23234E00764CA0 /* KennyPlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F546E41A23234E00764CA0 /* KennyPlayViewController.m */; };
 		B2F546F91A23249200764CA0 /* endless_btn_mode_1.png in Resources */ = {isa = PBXBuildFile; fileRef = B2F546E61A23249200764CA0 /* endless_btn_mode_1.png */; };
@@ -268,6 +278,19 @@
 		B20AA1881A22BF0E006FF653 /* endless_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endless_bg.png; sourceTree = "<group>"; };
 		B20AA18A1A22C056006FF653 /* endless_btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endless_btn_back.png; sourceTree = "<group>"; };
 		B20AA18B1A22C056006FF653 /* endless_btn_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endless_btn_start.png; sourceTree = "<group>"; };
+		B252F03E1A27F5F900B1DBA1 /* KennyFadeSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KennyFadeSegue.h; sourceTree = "<group>"; };
+		B252F03F1A27F5F900B1DBA1 /* KennyFadeSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KennyFadeSegue.m; sourceTree = "<group>"; };
+		B252F0411A27F7E500B1DBA1 /* KennyMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KennyMusicPlayer.h; sourceTree = "<group>"; };
+		B252F0421A27F7E500B1DBA1 /* KennyMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KennyMusicPlayer.m; sourceTree = "<group>"; };
+		B252F0441A27FCCE00B1DBA1 /* pause_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_bg.png; sourceTree = "<group>"; };
+		B252F0461A27FCDB00B1DBA1 /* pause_btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_btn_back.png; sourceTree = "<group>"; };
+		B252F0481A27FCE000B1DBA1 /* pause_btn_mainmenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_btn_mainmenu.png; sourceTree = "<group>"; };
+		B252F04A1A27FCE600B1DBA1 /* pause_btn_exit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_btn_exit.png; sourceTree = "<group>"; };
+		B252F04C1A27FCF300B1DBA1 /* pause_btn_minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_btn_minus.png; sourceTree = "<group>"; };
+		B252F04D1A27FCF300B1DBA1 /* pause_btn_plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_btn_plus.png; sourceTree = "<group>"; };
+		B2C98A6A1A27F24B004899CB /* play_btn_pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_btn_pause.png; sourceTree = "<group>"; };
+		B2C98A6C1A27F29B004899CB /* KennyPauseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KennyPauseViewController.h; sourceTree = "<group>"; };
+		B2C98A6D1A27F29B004899CB /* KennyPauseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KennyPauseViewController.m; sourceTree = "<group>"; };
 		B2F546E01A231E0900764CA0 /* KennyEndlessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KennyEndlessViewController.h; sourceTree = "<group>"; };
 		B2F546E11A231E0900764CA0 /* KennyEndlessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KennyEndlessViewController.m; sourceTree = "<group>"; };
 		B2F546E31A23234E00764CA0 /* KennyPlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KennyPlayViewController.h; sourceTree = "<group>"; };
@@ -363,12 +386,18 @@
 				B20AA0A61A22B2ED006FF653 /* KennyAppDelegate.h */,
 				B20AA0A71A22B2ED006FF653 /* KennyAppDelegate.m */,
 				B20AA0A91A22B2ED006FF653 /* Main.storyboard */,
+				B252F03E1A27F5F900B1DBA1 /* KennyFadeSegue.h */,
+				B252F03F1A27F5F900B1DBA1 /* KennyFadeSegue.m */,
+				B252F0411A27F7E500B1DBA1 /* KennyMusicPlayer.h */,
+				B252F0421A27F7E500B1DBA1 /* KennyMusicPlayer.m */,
 				B20AA0AC1A22B2ED006FF653 /* KennyMainmenuViewController.h */,
 				B20AA0AD1A22B2ED006FF653 /* KennyMainmenuController.m */,
 				B2F546E01A231E0900764CA0 /* KennyEndlessViewController.h */,
 				B2F546E11A231E0900764CA0 /* KennyEndlessViewController.m */,
 				B2F546E31A23234E00764CA0 /* KennyPlayViewController.h */,
 				B2F546E41A23234E00764CA0 /* KennyPlayViewController.m */,
+				B2C98A6C1A27F29B004899CB /* KennyPauseViewController.h */,
+				B2C98A6D1A27F29B004899CB /* KennyPauseViewController.m */,
 				B20AA0AF1A22B2ED006FF653 /* Images.xcassets */,
 				B20AA09E1A22B2ED006FF653 /* Supporting Files */,
 			);
@@ -412,6 +441,13 @@
 				B2F546F61A23249200764CA0 /* endless_img_line_32.png */,
 				B2F546F71A23249200764CA0 /* endless_img_line_33.png */,
 				B2F546F81A23249200764CA0 /* endless_img_line_34.png */,
+				B2C98A6A1A27F24B004899CB /* play_btn_pause.png */,
+				B252F0441A27FCCE00B1DBA1 /* pause_bg.png */,
+				B252F0461A27FCDB00B1DBA1 /* pause_btn_back.png */,
+				B252F0481A27FCE000B1DBA1 /* pause_btn_mainmenu.png */,
+				B252F04A1A27FCE600B1DBA1 /* pause_btn_exit.png */,
+				B252F04C1A27FCF300B1DBA1 /* pause_btn_minus.png */,
+				B252F04D1A27FCF300B1DBA1 /* pause_btn_plus.png */,
 				B20AA09F1A22B2ED006FF653 /* PapersPlease-Info.plist */,
 				B20AA0A01A22B2ED006FF653 /* InfoPlist.strings */,
 				B20AA0A31A22B2ED006FF653 /* main.m */,
@@ -633,6 +669,7 @@
 				B20AA15E1A22B7C1006FF653 /* paper-turnpage2.wav in Resources */,
 				B20AA1871A22BF02006FF653 /* mainmenu_btn_endless.png in Resources */,
 				B20AA1891A22BF0E006FF653 /* endless_bg.png in Resources */,
+				B252F04F1A27FCF300B1DBA1 /* pause_btn_plus.png in Resources */,
 				B2F547011A23249200764CA0 /* endless_img_line_12.png in Resources */,
 				B20AA0CD1A22B63C006FF653 /* mainmenu_bg.png in Resources */,
 				B2F547161A23273D00764CA0 /* ic_29.png in Resources */,
@@ -656,6 +693,7 @@
 				B20AA1281A22B7C1006FF653 /* Theme.ogg in Resources */,
 				B20AA17C1A22B7C1006FF653 /* traveler-walkin.wav in Resources */,
 				B20AA1371A22B7C1006FF653 /* border-tranqshot.wav in Resources */,
+				B2C98A6B1A27F24B004899CB /* play_btn_pause.png in Resources */,
 				B20AA1691A22B7C1006FF653 /* speech-announce.wav in Resources */,
 				B20AA14C1A22B7C1006FF653 /* metal-dragstart0.wav in Resources */,
 				B20AA1451A22B7C1006FF653 /* heavy-drop.wav in Resources */,
@@ -684,6 +722,7 @@
 				B20AA12A1A22B7C1006FF653 /* booth-ambient.wav in Resources */,
 				B20AA1481A22B7C1006FF653 /* inspect-highlight.wav in Resources */,
 				B2F547021A23249200764CA0 /* endless_img_line_13.png in Resources */,
+				B252F0471A27FCDB00B1DBA1 /* pause_btn_back.png in Resources */,
 				B20AA12B1A22B7C1006FF653 /* booth-boom.wav in Resources */,
 				B20AA13A1A22B7C1006FF653 /* button-drop.wav in Resources */,
 				B2F547191A23273D00764CA0 /* ic_76.png in Resources */,
@@ -696,10 +735,12 @@
 				B20AA12D1A22B7C1006FF653 /* border-alarm.wav in Resources */,
 				B20AA13B1A22B7C1006FF653 /* button-up.wav in Resources */,
 				B20AA15C1A22B7C1006FF653 /* paper-turnpage0.wav in Resources */,
+				B252F04E1A27FCF300B1DBA1 /* pause_btn_minus.png in Resources */,
 				B20AA14B1A22B7C1006FF653 /* inspect-unhighlight.wav in Resources */,
 				B20AA1511A22B7C1006FF653 /* metal-dragstop2.wav in Resources */,
 				B20AA14D1A22B7C1006FF653 /* metal-dragstart1.wav in Resources */,
 				B20AA1501A22B7C1006FF653 /* metal-dragstop1.wav in Resources */,
+				B252F04B1A27FCE600B1DBA1 /* pause_btn_exit.png in Resources */,
 				B20AA1491A22B7C1006FF653 /* inspect-interrogateon.wav in Resources */,
 				B20AA17A1A22B7C1006FF653 /* traveler-breatheout.wav in Resources */,
 				B20AA1561A22B7C1006FF653 /* paper-dragstart1.wav in Resources */,
@@ -733,9 +774,11 @@
 				B20AA1421A22B7C1006FF653 /* filer-open.wav in Resources */,
 				B20AA12C1A22B7C1006FF653 /* booth-intro.wav in Resources */,
 				B2F547171A23273D00764CA0 /* ic_40.png in Resources */,
+				B252F0491A27FCE000B1DBA1 /* pause_btn_mainmenu.png in Resources */,
 				B20AA0AB1A22B2ED006FF653 /* Main.storyboard in Resources */,
 				B20AA1331A22B7C1006FF653 /* border-guardshot0.wav in Resources */,
 				B2F547181A23273D00764CA0 /* ic_58.png in Resources */,
+				B252F0451A27FCCE00B1DBA1 /* pause_bg.png in Resources */,
 				B20AA1311A22B7C1006FF653 /* border-callguards.wav in Resources */,
 				B20AA1541A22B7C1006FF653 /* motorbike-rev.wav in Resources */,
 			);
@@ -756,10 +799,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B252F0431A27F7E500B1DBA1 /* KennyMusicPlayer.m in Sources */,
 				B20AA0A81A22B2ED006FF653 /* KennyAppDelegate.m in Sources */,
+				B2C98A6E1A27F29B004899CB /* KennyPauseViewController.m in Sources */,
 				B2F546E21A231E0900764CA0 /* KennyEndlessViewController.m in Sources */,
 				B2F546E51A23234E00764CA0 /* KennyPlayViewController.m in Sources */,
 				B20AA0AE1A22B2ED006FF653 /* KennyMainmenuController.m in Sources */,
+				B252F0401A27F5F900B1DBA1 /* KennyFadeSegue.m in Sources */,
 				B20AA0A41A22B2ED006FF653 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

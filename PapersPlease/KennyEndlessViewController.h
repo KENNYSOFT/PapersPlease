@@ -25,7 +25,7 @@
     int mode,type;
 }
 
--(IBAction)goBack:(id)sender;
+-(IBAction)buttonClicked:(id)sender;
 -(void)setLine;
 
 @end

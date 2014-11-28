@@ -8,13 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
+#import "KennyMusicPlayer.h"
 
 @interface KennyMainmenuViewController : UIViewController
 {
     IBOutlet UIView *mainmenu;
     IBOutlet UIImageView *mainmenu_bg;
     IBOutlet UIButton *mainmenu_btn_endless;
-    AVAudioPlayer *audioPlayer;
+    KennyMusicPlayer *player;
 }
 
 @end

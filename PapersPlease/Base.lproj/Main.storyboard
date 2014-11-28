@@ -45,7 +45,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="highlighted" backgroundImage="mainmenu_btn_endless.png"/>
                                 <connections>
-                                    <segue destination="NlJ-FJ-dhW" kind="push" id="ClM-22-ZXv"/>
+                                    <segue destination="NlJ-FJ-dhW" kind="custom" customClass="KennyFadeSegue" id="ClM-22-ZXv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,7 +85,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="highlighted" backgroundImage="endless_btn_back.png"/>
                                 <connections>
-                                    <action selector="goBack:" destination="NlJ-FJ-dhW" eventType="touchUpInside" id="scS-DH-b6C"/>
+                                    <segue destination="BYZ-38-t0r" kind="custom" customClass="KennyFadeSegue" id="pVI-nN-kPm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxU-zz-lMo">
@@ -96,7 +96,7 @@
                                 </state>
                                 <state key="highlighted" backgroundImage="endless_btn_start.png"/>
                                 <connections>
-                                    <segue destination="QqU-gK-C1t" kind="push" id="VrC-dC-vHh"/>
+                                    <segue destination="QqU-gK-C1t" kind="custom" customClass="KennyFadeSegue" id="VrC-dC-vHh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hb-Bp-3my">
@@ -216,6 +216,18 @@
                     <view key="view" contentMode="scaleToFill" id="wSh-m4-JzG">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akl-tC-CA0">
+                                <rect key="frame" x="443" y="320" width="34" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="play_btn_pause.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qtT-fc-bcL" kind="custom" identifier="" customClass="KennyFadeSegue" id="b6A-BU-K24"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -224,7 +236,90 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j0m-uW-O40" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2283" y="-252"/>
+            <point key="canvasLocation" x="2253" y="-252"/>
+        </scene>
+        <!--Kenny Pause View Controller-->
+        <scene sceneID="O5Q-Ib-Xyp">
+            <objects>
+                <viewController id="qtT-fc-bcL" customClass="KennyPauseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fcT-KK-aUx"/>
+                        <viewControllerLayoutGuide type="bottom" id="jGw-xa-Ogg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zbm-bK-I8L">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pause_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="SIk-i3-XtQ">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMM-B5-hMA">
+                                <rect key="frame" x="395" y="495" width="232" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="pause_btn_back.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzi-el-xjT">
+                                <rect key="frame" x="395" y="547" width="232" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="pause_btn_mainmenu.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDG-7j-oQz">
+                                <rect key="frame" x="395" y="599" width="232" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="pause_btn_exit.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvF-qr-9sq">
+                                <rect key="frame" x="638" y="366" width="19" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="pause_btn_minus.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eX0-eE-l14">
+                                <rect key="frame" x="672" y="366" width="19" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="pause_btn_plus.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCY-NZ-M24">
+                                <rect key="frame" x="672" y="402" width="19" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="pause_btn_plus.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m75-5D-MZo">
+                                <rect key="frame" x="638" y="402" width="19" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="pause_btn_minus.png"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ECY-f0-JnK"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCm-V4-BRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3537" y="-252"/>
         </scene>
     </scenes>
     <resources>
@@ -240,10 +335,20 @@
         <image name="endless_btn_type_4.png" width="160" height="120"/>
         <image name="mainmenu_bg.png" width="1140" height="640"/>
         <image name="mainmenu_btn_endless.png" width="258" height="30"/>
+        <image name="pause_bg.png" width="1140" height="640"/>
+        <image name="pause_btn_back.png" width="258" height="30"/>
+        <image name="pause_btn_exit.png" width="258" height="30"/>
+        <image name="pause_btn_mainmenu.png" width="258" height="30"/>
+        <image name="pause_btn_minus.png" width="22" height="22"/>
+        <image name="pause_btn_plus.png" width="22" height="22"/>
+        <image name="play_btn_pause.png" width="34" height="34"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="pVI-nN-kPm"/>
+    </inferredMetricsTieBreakers>
 </document>

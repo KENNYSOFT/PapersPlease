@@ -19,13 +19,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    if(audioPlayer==nil)
+    player=[[KennyMusicPlayer alloc] init];
+    if(![player isPlaying])
     {
-        audioPlayer=[[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Theme" ofType:@"mp3"]] error:nil];
-        [audioPlayer setNumberOfLoops:-1];
-        [audioPlayer prepareToPlay];
+        NSLog(@"?");
+        [player play];
     }
-    [audioPlayer play];
 }
 
 - (void)didReceiveMemoryWarning
