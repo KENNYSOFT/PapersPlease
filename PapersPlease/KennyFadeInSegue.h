@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KennyFadeSegue : UIStoryboardSegue
+@interface KennyFadeInSegue : UIStoryboardSegue
 
 @end

@@ -114,7 +114,8 @@
 		B20AA1891A22BF0E006FF653 /* endless_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B20AA1881A22BF0E006FF653 /* endless_bg.png */; };
 		B20AA18C1A22C056006FF653 /* endless_btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = B20AA18A1A22C056006FF653 /* endless_btn_back.png */; };
 		B20AA18D1A22C056006FF653 /* endless_btn_start.png in Resources */ = {isa = PBXBuildFile; fileRef = B20AA18B1A22C056006FF653 /* endless_btn_start.png */; };
-		B252F0401A27F5F900B1DBA1 /* KennyFadeSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B252F03F1A27F5F900B1DBA1 /* KennyFadeSegue.m */; };
+		B21045271A2C009E0076963E /* KennyFadeOutSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B21045261A2C009E0076963E /* KennyFadeOutSegue.m */; };
+		B252F0401A27F5F900B1DBA1 /* KennyFadeInSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = B252F03F1A27F5F900B1DBA1 /* KennyFadeInSegue.m */; };
 		B252F0431A27F7E500B1DBA1 /* KennyMusicPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B252F0421A27F7E500B1DBA1 /* KennyMusicPlayer.m */; };
 		B252F0451A27FCCE00B1DBA1 /* pause_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = B252F0441A27FCCE00B1DBA1 /* pause_bg.png */; };
 		B252F0471A27FCDB00B1DBA1 /* pause_btn_back.png in Resources */ = {isa = PBXBuildFile; fileRef = B252F0461A27FCDB00B1DBA1 /* pause_btn_back.png */; };
@@ -278,8 +279,10 @@
 		B20AA1881A22BF0E006FF653 /* endless_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endless_bg.png; sourceTree = "<group>"; };
 		B20AA18A1A22C056006FF653 /* endless_btn_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endless_btn_back.png; sourceTree = "<group>"; };
 		B20AA18B1A22C056006FF653 /* endless_btn_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = endless_btn_start.png; sourceTree = "<group>"; };
-		B252F03E1A27F5F900B1DBA1 /* KennyFadeSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KennyFadeSegue.h; sourceTree = "<group>"; };
-		B252F03F1A27F5F900B1DBA1 /* KennyFadeSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KennyFadeSegue.m; sourceTree = "<group>"; };
+		B21045251A2C009E0076963E /* KennyFadeOutSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KennyFadeOutSegue.h; sourceTree = "<group>"; };
+		B21045261A2C009E0076963E /* KennyFadeOutSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KennyFadeOutSegue.m; sourceTree = "<group>"; };
+		B252F03E1A27F5F900B1DBA1 /* KennyFadeInSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KennyFadeInSegue.h; sourceTree = "<group>"; };
+		B252F03F1A27F5F900B1DBA1 /* KennyFadeInSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KennyFadeInSegue.m; sourceTree = "<group>"; };
 		B252F0411A27F7E500B1DBA1 /* KennyMusicPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KennyMusicPlayer.h; sourceTree = "<group>"; };
 		B252F0421A27F7E500B1DBA1 /* KennyMusicPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KennyMusicPlayer.m; sourceTree = "<group>"; };
 		B252F0441A27FCCE00B1DBA1 /* pause_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pause_bg.png; sourceTree = "<group>"; };
@@ -386,10 +389,12 @@
 				B20AA0A61A22B2ED006FF653 /* KennyAppDelegate.h */,
 				B20AA0A71A22B2ED006FF653 /* KennyAppDelegate.m */,
 				B20AA0A91A22B2ED006FF653 /* Main.storyboard */,
-				B252F03E1A27F5F900B1DBA1 /* KennyFadeSegue.h */,
-				B252F03F1A27F5F900B1DBA1 /* KennyFadeSegue.m */,
 				B252F0411A27F7E500B1DBA1 /* KennyMusicPlayer.h */,
 				B252F0421A27F7E500B1DBA1 /* KennyMusicPlayer.m */,
+				B252F03E1A27F5F900B1DBA1 /* KennyFadeInSegue.h */,
+				B252F03F1A27F5F900B1DBA1 /* KennyFadeInSegue.m */,
+				B21045251A2C009E0076963E /* KennyFadeOutSegue.h */,
+				B21045261A2C009E0076963E /* KennyFadeOutSegue.m */,
 				B20AA0AC1A22B2ED006FF653 /* KennyMainmenuViewController.h */,
 				B20AA0AD1A22B2ED006FF653 /* KennyMainmenuController.m */,
 				B2F546E01A231E0900764CA0 /* KennyEndlessViewController.h */,
@@ -802,10 +807,11 @@
 				B252F0431A27F7E500B1DBA1 /* KennyMusicPlayer.m in Sources */,
 				B20AA0A81A22B2ED006FF653 /* KennyAppDelegate.m in Sources */,
 				B2C98A6E1A27F29B004899CB /* KennyPauseViewController.m in Sources */,
+				B21045271A2C009E0076963E /* KennyFadeOutSegue.m in Sources */,
 				B2F546E21A231E0900764CA0 /* KennyEndlessViewController.m in Sources */,
 				B2F546E51A23234E00764CA0 /* KennyPlayViewController.m in Sources */,
 				B20AA0AE1A22B2ED006FF653 /* KennyMainmenuController.m in Sources */,
-				B252F0401A27F5F900B1DBA1 /* KennyFadeSegue.m in Sources */,
+				B252F0401A27F5F900B1DBA1 /* KennyFadeInSegue.m in Sources */,
 				B20AA0A41A22B2ED006FF653 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -933,6 +939,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PapersPlease/PapersPlease-Prefix.pch";
 				INFOPLIST_FILE = "PapersPlease/PapersPlease-Info.plist";
@@ -946,6 +953,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PapersPlease/PapersPlease-Prefix.pch";
 				INFOPLIST_FILE = "PapersPlease/PapersPlease-Info.plist";

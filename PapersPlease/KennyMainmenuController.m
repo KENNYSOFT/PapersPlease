@@ -20,17 +20,24 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     player=[[KennyMusicPlayer alloc] init];
-    if(![player isPlaying])
-    {
-        NSLog(@"?");
-        [player play];
-    }
+    if(![player isPlaying])[player play];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)unwindToMainmenu:(UIStoryboardSegue *)sender
+{
+    //TODO: http://www.cocoanetics.com/2014/04/unwinding/
+}
+
+- (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier
+{
+    KennyFadeOutSegue *segue = [[KennyFadeOutSegue alloc] initWithIdentifier:identifier source:fromViewController destination:toViewController];
+    return segue;
 }
 
 @end

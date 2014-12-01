@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AVFoundation/AVFoundation.h>
 #import "KennyMusicPlayer.h"
+#import "KennyFadeOutSegue.h"
 
 @interface KennyMainmenuViewController : UIViewController
 {

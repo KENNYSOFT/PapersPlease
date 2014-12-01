@@ -1,29 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="93F-5C-j0y">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="4uU-Iw-9WM">
-            <objects>
-                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="93F-5C-j0y" sceneMemberID="viewController">
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2l4-nK-g0A">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="sfJ-Tl-ObC">
-                        <rect key="frame" x="0.0" y="724" width="1024" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </toolbar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nsX-Od-mUv"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="k6T-ed-w6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1550" y="-252"/>
-        </scene>
         <!--Kenny Mainmenu View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -45,7 +25,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="highlighted" backgroundImage="mainmenu_btn_endless.png"/>
                                 <connections>
-                                    <segue destination="NlJ-FJ-dhW" kind="custom" customClass="KennyFadeSegue" id="ClM-22-ZXv"/>
+                                    <segue destination="NlJ-FJ-dhW" kind="custom" identifier="" customClass="KennyFadeInSegue" id="ClM-22-ZXv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,7 +65,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="highlighted" backgroundImage="endless_btn_back.png"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="custom" customClass="KennyFadeSegue" id="pVI-nN-kPm"/>
+                                    <segue destination="mss-pQ-K4e" kind="unwind" unwindAction="unwindToMainmenu:" id="3KY-io-fL0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JxU-zz-lMo">
@@ -96,7 +76,7 @@
                                 </state>
                                 <state key="highlighted" backgroundImage="endless_btn_start.png"/>
                                 <connections>
-                                    <segue destination="QqU-gK-C1t" kind="custom" customClass="KennyFadeSegue" id="VrC-dC-vHh"/>
+                                    <segue destination="QqU-gK-C1t" kind="custom" customClass="KennyFadeInSegue" id="VrC-dC-vHh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4hb-Bp-3my">
@@ -202,6 +182,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xpz-0a-yo8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="mss-pQ-K4e" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1002" y="-252"/>
         </scene>
@@ -224,7 +205,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qtT-fc-bcL" kind="custom" identifier="" customClass="KennyFadeSegue" id="b6A-BU-K24"/>
+                                    <segue destination="qtT-fc-bcL" kind="custom" identifier="" customClass="KennyFadeInSegue" id="b6A-BU-K24"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -269,6 +250,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" backgroundImage="pause_btn_mainmenu.png"/>
+                                <connections>
+                                    <segue destination="gD5-5N-7Lq" kind="unwind" unwindAction="unwindToMainmenu:" id="ptW-BZ-Ehe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDG-7j-oQz">
                                 <rect key="frame" x="395" y="599" width="232" height="27"/>
@@ -318,6 +302,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCm-V4-BRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="gD5-5N-7Lq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3537" y="-252"/>
         </scene>
@@ -348,7 +333,4 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="pVI-nN-kPm"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -6,11 +6,11 @@
 //  Copyright (c) 2014년 KENNYSOFT. All rights reserved.
 //
 
-#import "KennyFadeSegue.h"
+#import "KennyFadeInSegue.h"
 
-@implementation KennyFadeSegue
+@implementation KennyFadeInSegue
 
-- (void)perform
+-(void)perform
 {
     CATransition *transition = [CATransition animation];
     transition.duration = 0.5;
