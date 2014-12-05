@@ -14,7 +14,7 @@
 		B20AA0A41A22B2ED006FF653 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B20AA0A31A22B2ED006FF653 /* main.m */; };
 		B20AA0A81A22B2ED006FF653 /* KennyAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B20AA0A71A22B2ED006FF653 /* KennyAppDelegate.m */; };
 		B20AA0AB1A22B2ED006FF653 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20AA0A91A22B2ED006FF653 /* Main.storyboard */; };
-		B20AA0AE1A22B2ED006FF653 /* KennyMainmenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20AA0AD1A22B2ED006FF653 /* KennyMainmenuController.m */; };
+		B20AA0AE1A22B2ED006FF653 /* KennyMainmenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B20AA0AD1A22B2ED006FF653 /* KennyMainmenuViewController.m */; };
 		B20AA0B01A22B2ED006FF653 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20AA0AF1A22B2ED006FF653 /* Images.xcassets */; };
 		B20AA0B71A22B2ED006FF653 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20AA0B61A22B2ED006FF653 /* XCTest.framework */; };
 		B20AA0B81A22B2ED006FF653 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20AA0971A22B2ED006FF653 /* Foundation.framework */; };
@@ -179,7 +179,7 @@
 		B20AA0A71A22B2ED006FF653 /* KennyAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KennyAppDelegate.m; sourceTree = "<group>"; };
 		B20AA0AA1A22B2ED006FF653 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B20AA0AC1A22B2ED006FF653 /* KennyMainmenuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KennyMainmenuViewController.h; sourceTree = "<group>"; };
-		B20AA0AD1A22B2ED006FF653 /* KennyMainmenuController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KennyMainmenuController.m; sourceTree = "<group>"; };
+		B20AA0AD1A22B2ED006FF653 /* KennyMainmenuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KennyMainmenuViewController.m; sourceTree = "<group>"; };
 		B20AA0AF1A22B2ED006FF653 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B20AA0B51A22B2ED006FF653 /* PapersPleaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PapersPleaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B20AA0B61A22B2ED006FF653 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -396,7 +396,7 @@
 				B21045251A2C009E0076963E /* KennyFadeOutSegue.h */,
 				B21045261A2C009E0076963E /* KennyFadeOutSegue.m */,
 				B20AA0AC1A22B2ED006FF653 /* KennyMainmenuViewController.h */,
-				B20AA0AD1A22B2ED006FF653 /* KennyMainmenuController.m */,
+				B20AA0AD1A22B2ED006FF653 /* KennyMainmenuViewController.m */,
 				B2F546E01A231E0900764CA0 /* KennyEndlessViewController.h */,
 				B2F546E11A231E0900764CA0 /* KennyEndlessViewController.m */,
 				B2F546E31A23234E00764CA0 /* KennyPlayViewController.h */,
@@ -810,7 +810,7 @@
 				B21045271A2C009E0076963E /* KennyFadeOutSegue.m in Sources */,
 				B2F546E21A231E0900764CA0 /* KennyEndlessViewController.m in Sources */,
 				B2F546E51A23234E00764CA0 /* KennyPlayViewController.m in Sources */,
-				B20AA0AE1A22B2ED006FF653 /* KennyMainmenuController.m in Sources */,
+				B20AA0AE1A22B2ED006FF653 /* KennyMainmenuViewController.m in Sources */,
 				B252F0401A27F5F900B1DBA1 /* KennyFadeInSegue.m in Sources */,
 				B20AA0A41A22B2ED006FF653 /* main.m in Sources */,
 			);

@@ -18,7 +18,17 @@
     
     [[[[[self sourceViewController] view] window] layer] addAnimation:transition forKey:kCATransitionFade];
     
-    [[self sourceViewController] dismissViewControllerAnimated:NO completion:NULL];
+    //[[self sourceViewController] dismissViewControllerAnimated:NO completion:NULL];
+    
+    UIViewController *viewController = [self sourceViewController];
+    UIViewController *parentViewController = nil;
+    
+    do
+    {
+        parentViewController = [viewController presentingViewController];
+        [viewController dismissViewControllerAnimated:NO completion:NULL];
+        viewController = parentViewController;
+    }while(![viewController isKindOfClass:[[self destinationViewController] class]]);
 }
 
 @end

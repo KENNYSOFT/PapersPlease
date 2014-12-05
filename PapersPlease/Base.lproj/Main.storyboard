@@ -242,6 +242,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" backgroundImage="pause_btn_back.png"/>
+                                <connections>
+                                    <segue destination="gD5-5N-7Lq" kind="unwind" unwindAction="unwindToPlay:" id="LDv-ou-yLj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rzi-el-xjT">
                                 <rect key="frame" x="395" y="547" width="232" height="27"/>
@@ -251,7 +254,7 @@
                                 </state>
                                 <state key="highlighted" backgroundImage="pause_btn_mainmenu.png"/>
                                 <connections>
-                                    <segue destination="gD5-5N-7Lq" kind="unwind" unwindAction="unwindToMainmenu:" id="ptW-BZ-Ehe"/>
+                                    <segue destination="gD5-5N-7Lq" kind="unwind" unwindAction="unwindToMainmenu:" id="hUX-yH-QCq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDG-7j-oQz">

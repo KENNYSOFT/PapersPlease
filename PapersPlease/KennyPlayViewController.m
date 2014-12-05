@@ -10,4 +10,14 @@
 
 @implementation KennyPlayViewController
 
+- (IBAction)unwindToPlay:(UIStoryboardSegue *)sender
+{
+}
+
+- (UIStoryboardSegue *)segueForUnwindingToViewController:(UIViewController *)toViewController fromViewController:(UIViewController *)fromViewController identifier:(NSString *)identifier
+{
+    KennyFadeOutSegue *segue = [[KennyFadeOutSegue alloc] initWithIdentifier:identifier source:fromViewController destination:toViewController];
+    return segue;
+}
+
 @end
